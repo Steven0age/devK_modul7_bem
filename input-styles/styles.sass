@@ -37,39 +37,7 @@ p
   &__products
     display: flex
 
-  &__single-product
-    margin: 1rem 0.5rem
-    border: 1px solid rgba(0,0,0,0.2)
-    border-radius: 2%
-
-    &:hover
-      cursor: pointer
-
-    &--headline
-      padding: 0 1rem
-      font-size: 1.2rem
-
-    &--image
-      @include centerCenter()
-      background-color: lighten($main-color, 20)
-      height: 10rem
-
-    &--description
-      padding: 0 1rem
-      font-size: 0.8rem
-      color: $font-gray
-
-    &--price
-      padding: 0 1rem
-      font-weight: bold
-
-    &--old-price
-      color: $font-red
-      text-decoration: line-through
-      font-size: 0.8rem
-      font-weight: bold
-
-  &--button
+  &__button
     background-color: $main-color
     color: $font-white
     padding: 0.8rem 1rem
@@ -82,3 +50,35 @@ p
       color: $main-color
       box-shadow: 1px 1px 1px rgba(0,0,0,0.2)
       transition: 200ms
+
+.single-product
+  margin: 1rem 0.5rem
+  border: 1px solid rgba(0,0,0,0.2)
+  border-radius: 2%
+
+  &:hover
+    cursor: pointer
+
+  &__image
+    @include centerCenter()
+    background-color: lighten($main-color, 20)
+    height: 10rem
+
+  &__headline
+    padding: 0 1rem
+    font-size: 1.2rem
+
+  &__description
+    padding: 0 1rem
+    font-size: 0.8rem
+    color: $font-gray
+
+  &__price
+    padding: 0 1rem
+    font-weight: bold
+
+    &--old-price
+      color: $font-red
+      text-decoration: line-through
+      font-size: 0.8rem
+      font-weight: bold
